@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;
+}
+#fixed{
+    position: fixed;
+    width: 100vw; height: 100vh; object-fit: cover; object-position: 50% 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    list-style-type: none;
+    width:30vw;
+}
+
+header{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgba(0, 0, 0, 0.18);
+    height: 90px;
+    width: 100vw;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+/* a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Rubik,sans-serif;
+    font-weight: 50;
+}
+a:hover{
+    border-top: 4px solid aliceblue;
+    
+} */
+#piclink:hover{
+    border-top: 0;
+}
+
+front{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+bigtext{
+    width: 100vw;
+    height: 437px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text{
+    position: relative;
+    color: aliceblue;
+    font-size: 15vh;
+    font-family: Rubik,sans-serif;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 20px;
+}
+content{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    /* height: 160px; */
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+textvisa{
+    width: 40vw;
+    font-size: 14.5px;
+    height: auto;
+    font-family: Rubik,sans-serif;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+#para{
+    margin-top: 70px;
+}
+textvisa p{
+    margin:10px;
+}
+textvisa ul{
+    display: block;
+    list-style:disc;
+    margin:10px;
+}
+textvisa ul ul{
+    list-style: circle;
+    margin-left: 25px;
+}
+@media screen and (max-width:850px){
+    
+    textvisa{
+        width: 60vw;
+        font-size: 12px;
+        line-height: 2.2em;
+    }
+    textvisa ul{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:450px){
+    #para{
+        margin-top: 20px;
+    }
+    textvisa{
+        width: 100vw;
+    }
+    textvisa ul{
+        width: 95%;
+    }
+    textvisa ul ul{
+        margin-left: 10px;
+    }
+    
+}
